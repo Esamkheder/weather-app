@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf4ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.weather-card {
+    background-color: white;
+    width: 320px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+h1 {
+    color: #2474d2;
+    margin-bottom: 8px;
+}
+
+.weather-card > p {
+    color: #000;
+    font-size: 14px;
+}
+
+.search {
+    display: flex;
+    gap: 6px;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2474d2;
+    color: white;
+    cursor: pointer;
+}
+
+.weather {
+    background-color: #f3f8ff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.weather h2 {
+    margin: 5px;
+    color: #333;
+}
+
+.icon {
+    font-size: 45px;
+    width: 224px;
+    height: 244px;
+}
+
+.weather h3 {
+    font-size: 32px;
+    margin: 8px;
+    color: #2474d2;
+}
+
+.weather p {
+    margin-bottom: 5px;
+    color: #666;
+}
+.weather-card > .copyRight {
+    color: #666;
+    display: flex;
+    justify-content: center;
+}
+.weather-card > .copyRight > span{
+    color: #2474d2;
+}
