@@ -10,7 +10,7 @@ pipeline{
                          'style.css'
                          ]
                      for (file in files){
-                           sh "test -f '${file}' || echo 'error: ${file} is not found '; exit 1;"
+                           sh "test -f '${file}' || ( echo 'error: ${file} is not found '; exit 1)"
                          }
                      echo 'All Files Found!!'
             
