@@ -6,7 +6,6 @@ const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/res
 const searchBox = document.querySelector(".search input")
 const searchBtn = document.querySelector(".search button")
 const weatherIcon = document.querySelector(".icon")
-
 search_but.addEventListener("click", () => {
     if (input_search.value.trim() === "") {
         error_mes.textContent = "Please enter a city name";
