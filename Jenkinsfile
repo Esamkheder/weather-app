@@ -19,6 +19,22 @@ pipeline{
             }
 
         }
+        stage("create api secret"){
+            steps{
+                withCredentials([
+                    file(
+                        credentialsId: 'api-secret',
+                        variable: 'api_secret_key'
+                    )
+                ]) {
+                    
+                    sh '''
+                        set +x
+                        kubectl apply -f "$secret.yml"
+                    ''' 
+                }
+            }
+        }
         stage("aplly deploy"){
             steps{
                 sh 'kubectl apply -f app.yml'
